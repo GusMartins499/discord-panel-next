@@ -27,3 +27,6 @@ Discord Status Panel - The goal of this project is to development a discord admi
   
 - [ ] Database:
   - [ ] Free online database
+  
+- [ ] Lint:
+  - [ ] Configure lint
