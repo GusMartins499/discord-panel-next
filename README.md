@@ -5,7 +5,7 @@
 
 Discord Status Panel - The goal of this project is to development a discord admin panel to configure any profile status for a bot changing the registered profile status accordingly the schedule
 
-## ⚙️ Funcionalidades
+## ⚙️ To-do
 
 - [ ] Dashboard:
   - [ ] List user servers
