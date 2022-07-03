@@ -1,5 +1,5 @@
 import NextAuth from 'next-auth';
-import DiscordProvider from "next-auth/providers/discord"
+import DiscordProvider from 'next-auth/providers/discord';
 import { enviroment } from '../../../utils/enviroment';
 
 export default NextAuth({
@@ -9,5 +9,5 @@ export default NextAuth({
       clientSecret: enviroment.DISCORD_SECRET,
     }),
   ],
-  
+
 });
