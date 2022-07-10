@@ -1,8 +1,8 @@
 import NextAuth from 'next-auth';
 import DiscordProvider from 'next-auth/providers/discord';
 import { v4 as uuid } from 'uuid';
-import { enviroment } from '../../../utils/enviroment';
-import { mongoClient } from '../../../database';
+import { enviroment } from '@utils/enviroment';
+import { mongoClient } from '@database/mongo';
 
 export default NextAuth({
   providers: [
