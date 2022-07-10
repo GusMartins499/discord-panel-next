@@ -7,13 +7,14 @@ Discord Status Panel - The goal of this project is to development a discord admi
 
 ## ⚙️ To-do
 
-- [ ] Dashboard:
-  - [ ] List user servers
+- [X] Dashboard:
+  - [X] List user servers
 
 - [ ] Automations:
-  - [ ] Create new automation
+  - [X] Create new automation
   - [ ] Edit an automation
-  - [ ] List automations
+  - [X] List automations
+  - [X] Delete an automation
 
 - [X] Discord auth:
   - [X] SignIn
@@ -25,8 +26,17 @@ Discord Status Panel - The goal of this project is to development a discord admi
   - [ ] Better components
   - [ ] ... ?
   
-- [ ] Database:
-  - [ ] Free online database
+- [X] Database:
+  - [X] Free online database
   
 - [X] Lint:
   - [X] Configure lint
+
+- [X] Commit-pattern:
+  - [X] Configure husky
+  - [X] Configure commitizen
+  - [X] Configure commitlint
+
+- [ ] Bot:
+  - [ ] Configure bot
+  - [ ] Configure bot to change status
