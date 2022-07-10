@@ -26,6 +26,9 @@
         "react/jsx-props-no-spreading": "off",
         "import/prefer-default-export": "off",
         "react/require-default-props": "off",
-        "react/jsx-no-useless-fragment": "off"
+        "react/jsx-no-useless-fragment": "off",
+        "no-unused-vars":"off",
+        "react/jsx-no-constructed-context-values": "off",
+        "react/function-component-definition": "off"
     }
 }
