@@ -1,21 +1,27 @@
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
-import { ChakraProvider, Container } from '@chakra-ui/react';
-import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
-import { Content } from '../components/Layout/Container';
+import { ChakraProvider } from '@chakra-ui/react';
+
+import { Header } from '@components/Header';
+import { Sidebar } from '@components/Sidebar';
+import { Container, Content } from '@components/Layout';
+
+import { ServiceProvider } from '@context/service';
+
 import { theme } from '../styles/theme';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Container maxW="75rem">
+      <Container>
         <SessionProvider session={session}>
-          <Header />
-          <Content>
-            <Sidebar />
-            <Component {...pageProps} />
-          </Content>
+          <ServiceProvider>
+            <Header />
+            <Content>
+              <Sidebar />
+              <Component {...pageProps} />
+            </Content>
+          </ServiceProvider>
         </SessionProvider>
       </Container>
     </ChakraProvider>
