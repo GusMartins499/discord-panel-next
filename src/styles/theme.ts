@@ -9,4 +9,13 @@ export const theme = extendTheme({
       },
     },
   },
+  components: {
+    Modal: {
+      baseStyle: () => ({
+        dialog: {
+          bg: 'gray.800',
+        },
+      }),
+    },
+  },
 });
