@@ -29,6 +29,7 @@
         "react/jsx-no-useless-fragment": "off",
         "no-unused-vars":"off",
         "react/jsx-no-constructed-context-values": "off",
-        "react/function-component-definition": "off"
+        "react/function-component-definition": "off",
+        "no-use-before-define": "off"
     }
 }
