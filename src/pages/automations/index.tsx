@@ -38,17 +38,16 @@ export default function Automations() {
   const { register, handleSubmit, resetField } = useForm<CreateAutomationFormData>();
   const [automations, setAutomations] = useState<IAutomations[]>([]);
 
+  useEffect(() => {
+    fetchAutomations();
+  }, []);
+
   const fetchAutomations = async () => {
     await service.automation.list({
       onSuccess: (data) => setAutomations(data),
       onError: (error) => console.log('error', error),
     });
   };
-  fetchAutomations();
-
-  useEffect(() => {
-    fetchAutomations();
-  }, []);
 
   const handleCreateAutomation: SubmitHandler<CreateAutomationFormData> = async (values) => {
     const { schedule, status } = values;
